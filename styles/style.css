@@ -363,7 +363,46 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 	display: block; 
     margin-left: auto;
     margin-right: auto;
+	padding-top: 30px;
 }
+
+/*  ----------------------- PROJEKT 7 - NATUR  ----------------------*/
+
+.naturbilleder1{
+	width: 800px;
+	height: 533;
+	
+	/* Her gøres billedet er centreret */
+	display: block; 
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 30px;
+}
+
+/*  ----------------------- PROJEKT 8 - GADER  ----------------------*/
+
+.gadebilleder1{
+	width: 800px;
+	height: 533;
+	
+	/* Her gøres billedet er centreret */
+	display: block; 
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 30px;
+}
+
+.gadebilleder2{
+	width: 800px;
+	height: 1100px;
+	
+	/* Her gøres billedet er centreret */
+	display: block; 
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 30px;
+}
+
 
 /*  ----------------------- LÆRING  ----------------------*/
 
@@ -424,9 +463,28 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 	width: 100%;
 }
 
-.button-laering-center button{
+.button-laering-center{
 	display: block;
 	
+}
+
+.button-cv{
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+	
+  position: relative;
+  left: 55%; /* the left edge of the button is now in the center of the parent element. Now we need to nudge the button back to the left by 50% of the button width to make it center aligned. */
+  margin-left: -100px; /*Note that if you set margin-left: -50%, this will move the button -50% of the parent element, which will return it to the far left side. */
 }
 
 .button-cv:hover {opacity: 1}
