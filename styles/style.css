@@ -5,14 +5,15 @@ body, html {
     height: 100%;
     margin: 0px;
 
-
 }
 
 h1 { font-family: "Open Sans"; font-size: 48px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 42px; } 
 
 h2 { font-family: "Open Sans"; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 28px; } 
 
-p { font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 22px; } 
+h3 { font-family: "Open Sans"; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 28px; } 
+
+p { font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 28px; } 
 
 li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; line-height: 28px; }
 
@@ -29,6 +30,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 .topnav {
     background-color: #FFFFFF;
     overflow: hidden;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -261,8 +263,6 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-
-
 }
 
 .dot-center{
@@ -291,7 +291,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
   to {opacity: 1}
 }
 
-.drømdinportfolio-original{
+.dromdinportfolio-original{
 	width: 100%;
 }
 
@@ -299,8 +299,6 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 
 .opgavebeskrivelse{
-	font-size: 18px;
-	line-height: 28px;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -330,23 +328,108 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 .feedback{
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 .feedbackliste{
-	font-size: 18px;
-	line-height: 28px;
 	width: auto;
 	margin-left: 20%;
 	margin-right: 20%;
 
 }
 
+/*  ----------------------- PROJEKT 6 - KIRKER  ----------------------*/
+
+.billedebeskrivelse{
+	text-align: center;
+}
+
+.kirkebillede1{
+	width: 800px;
+	height: 533;
+	
+	/* Her gøres billedet er centreret */
+	display: block; 
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 30px;
+}
+
+.kirkebillede2{
+	width: 800px;
+	height: 1100px;
+	
+	/* Her gøres billedet er centreret */
+	display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  ----------------------- LÆRING  ----------------------*/
+
+.laering-paragraf{
+	width: auto;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.laering-emner{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.laering-liste{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.laering-iconer{
+	float: right;
+	margin-right: 20%;
+}
+
+.iconer{
+	width: 120px;
+}
+
+.button-laering{
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+	
+  position: relative;
+  left: 50%; /* the left edge of the button is now in the center of the parent element. Now we need to nudge the button back to the left by 50% of the button width to make it center aligned. */
+  margin-left: -100px; /*Note that if you set margin-left: -50%, this will move the button -50% of the parent element, which will return it to the far left side. */
+}
+
+.button-laering:hover {opacity: 1}
+
+.linje{
+	margin-top: 3%;
+}
+
+
 /*  ----------------------- OM MIG  ----------------------*/
 
 .billede-ommig{
 	width: 100%;
 }
+
+.button-laering-center button{
+	display: block;
+	
+}
+
+.button-cv:hover {opacity: 1}
 
 /*  ----------------------- KONTAKT  ----------------------*/
 
@@ -384,6 +467,8 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
+	font-family: open sans;
+
 
 }
 
@@ -439,5 +524,12 @@ input[type=submit]:hover {
 	margin-right: 30px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+/* Her fjernes footer fra mobilversion*/
+@media (max-width: 668px){
+	footer{
+		display: none;
+	}
 }
 
