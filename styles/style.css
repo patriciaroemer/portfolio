@@ -30,7 +30,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #FFFFFF;
+    background-color: #485081;
     overflow: hidden;
 
 }
@@ -39,7 +39,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 .topnav a {
     float: left;
     display: block;
-    color: #000000;
+    color: white;
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
@@ -49,7 +49,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #F4F9FB;
     color: black;
 }
 
@@ -124,8 +124,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 /* Hero image underside */
 .hero-underside {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.png");
+    background-image: url("../img/hero-underside.png");
 
     /* Set a specific height */
     height: 35%;
@@ -144,7 +143,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color:#002929;
 }
 /*  ------------------ The hero projekt image ----------------*/
 
@@ -178,7 +177,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 .button-forside{
 	font-family: open sans;
-	color: white
+	color: white;
 }
 
 /*  ------------------------- PROJEKTER  -------------------------*/
@@ -235,23 +234,14 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
+/*.text {
+  color: #485081;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/7 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 55px 12px;
-  position: absolute;
-  top: 0;
+  text-align: left;
 }
 
 /* The dots/bullets/indicators */
@@ -271,7 +261,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #485081;
 }
 
 /* Fading animation */
@@ -303,10 +293,12 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .button-opgavebeskrivelse {
-  background-color: #f4511e;
+  background-color: #485081;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -391,6 +383,31 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 .paragraf-center-remake{
 	text-align: center;
+}
+
+.button-projekter{
+  background-color: #485081;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+	
+position: relative;
+  left: 50%; /* the left edge of the button is now in the center of the parent element. Now we need to nudge the button back to the left by 50% of the button width to make it center aligned. */
+  margin-left: -100px; /*Note that if you set margin-left: -50%, this will move the button -50% of the parent element, which will return it to the far left side. */
+}
+
+.button-projekter:hover {opacity: 1}
+
+.liste-knapper{
+	list-style-type: none;
 }
 
 /*  ----------------------- PROJEKT 6 - KIRKER  ----------------------*/
@@ -487,7 +504,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 }
 
 .button-laering{
-  background-color: #f4511e;
+  background-color: #485081;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -524,7 +541,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 }
 
 .button-cv{
-  background-color: #f4511e;
+  background-color: #485081;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -563,26 +580,24 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #485081;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
 }
 
+/* 
 input[type=submit]:hover {
-    background-color: #45a049;
-}
+    background-color: #002929;
+}*/
 
 
 /* Style the container/contact section */
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 10px;
 	font-family: open sans;
-
-
 }
 
 .container .map{
