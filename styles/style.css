@@ -214,10 +214,10 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
   width: auto;
   margin-top: -22px;
   padding: 20px;
-  color: white;
+  color: black; /* Farven på pilen */
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 25px;
+  transition: 0.2s ease; 
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -282,8 +282,15 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
   to {opacity: 1}
 }
 
-.dromdinportfolio-original{
+.screenshots-original{
 	width: 100%;
+}
+
+.screenshots-lodret{ /*centrering af billederne*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* SLIDESHOW SLUT*/
@@ -299,6 +306,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 
 .button-opgavebeskrivelse {
   background-color: #485081;
+  width: 200px;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -330,7 +338,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 	margin-right: 27%;
 }
 
-.tokolonner-paragraf{
+.tekst-paragraf{
 	width: auto;
 	margin-left: 27%;
 	margin-right: 27%;
@@ -361,8 +369,40 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
   }
 }
 
+.paragraf-center-remake{
+	text-align: center;
+}
+
+.flex-container{
+	display: flex;
+	justify-content:space-around;
+	width: 80%;
+	margin: auto;
+}
+
+.flex-item{
+	margin-top:30px;
+	max-width: 40%;
+}
+
+	
+.billeder-lodret{
+	display: list-item;
+    width: 100%;
+    height: auto;
+	}
+
 .billeder-vandret{
 	width: 100%;
+}
+
+.original-remake-overskrift{ 
+	text-align: center;
+}
+
+.remakewhitespace-overskrift{
+	text-align: center;
+	padding-top: 20px;
 }
 
 .merewhitespace{ /*høre til "Byg din portfolio" */
@@ -372,21 +412,9 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 	margin-left: 20%;
 }
 
-.remakewhitespace-overskrift{
-	text-align: center;
-	padding-top: 20px;
-}
-
-.original-remake-overskrift{ /* DET VIRKER IKKE :( */
-	text-align: center;
-}
-
-.paragraf-center-remake{
-	text-align: center;
-}
-
 .button-projekter{
   background-color: #485081;
+  width: 200px;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -505,6 +533,7 @@ position: relative;
 
 .button-laering{
   background-color: #485081;
+  width: 180px;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -542,6 +571,7 @@ position: relative;
 
 .button-cv{
   background-color: #485081;
+  width: 180px;
   border: none;
   color: white;
   padding: 16px 32px;
