@@ -176,7 +176,13 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 /* Billede - Byg en app */
 .img-projekt3 {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/projekt2-bygdinportfolio.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/projekterimg-forside/projekt3-bygenapp.png");
+}
+
+/* Billede - Sweetbot */
+.img-projekt4 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/projekterimg-forside/projekt4-sweetbot.png");
 }
 
 /* Place text in the middle of the image */
