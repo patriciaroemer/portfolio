@@ -150,18 +150,24 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
 /* The hero projekt image */
 .hero-projekt {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/projekt-1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/projekt1-drøm.png");
 
     /* Set a specific height */
     height: 70%;
 	
-	margin: 20px;
+	margin: 30px;
 	
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+	
+}
+
+.hero-projekt a:hover {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/projekt1-drøm.png");
 	
 }
 
@@ -172,7 +178,7 @@ li{font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color:#fff;
 }
 
 .button-forside{
@@ -436,6 +442,30 @@ position: relative;
 
 .liste-knapper{
 	list-style-type: none;
+}
+
+/*  ----------------------- PROJEKT 5 - PORTFOLIO  ----------------------*/
+
+.fancy-box{
+	width: 60%;
+	margin-left: 20%;
+	margin-top:2.5%;
+}
+
+.prototype-screenshot{
+	width: 60%;
+	height: auto;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 3%;
+}
+
+.farvepalette{
+	width: 60%;
+	height: auto;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 3%;
 }
 
 /*  ----------------------- PROJEKT 6 - KIRKER  ----------------------*/
